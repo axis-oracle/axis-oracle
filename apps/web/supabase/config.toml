@@ -1,0 +1,27 @@
+project_id = "zryeulucckdgaiboxntn"
+
+[functions.pandascore-matches]
+verify_jwt = false
+
+[functions.pandascore-match-status]
+verify_jwt = false
+
+[functions.pandascore-match-result]
+verify_jwt = false
+
+[functions.generate-settler-wallet]
+verify_jwt = false
+
+[functions.oracle-settler]
+verify_jwt = false
+schedule = "*/1 * * * *"
+
+[functions.esports-match-watcher]
+verify_jwt = false
+schedule = "*/2 * * * *"
+
+[functions.update-feed-after-recreate]
+verify_jwt = false
+
+[functions.rpc-proxy]
+verify_jwt = false

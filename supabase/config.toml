@@ -1,0 +1,62 @@
+project_id = "zryeulucckdgaiboxntn"
+
+[functions.pandascore-matches]
+verify_jwt = false
+
+[functions.pandascore-match-status]
+verify_jwt = false
+
+[functions.pandascore-match-result]
+verify_jwt = false
+
+[functions.generate-settler-wallet]
+verify_jwt = false
+
+[functions.oracle-settler]
+verify_jwt = false
+schedule = "*/1 * * * *"
+
+[functions.esports-match-watcher]
+verify_jwt = false
+schedule = "*/2 * * * *"
+
+[functions.update-feed-after-recreate]
+verify_jwt = false
+
+[functions.rpc-proxy]
+verify_jwt = false
+
+[functions.sports-matches]
+verify_jwt = false
+
+[functions.sports-match-watcher]
+verify_jwt = false
+schedule = "*/2 * * * *"
+
+[functions.twitter-metrics]
+verify_jwt = false
+
+[functions.launchpad-status]
+verify_jwt = false
+
+[functions.launchpad-watcher]
+verify_jwt = false
+schedule = "*/2 * * * *"
+
+[functions.tmdb-search]
+verify_jwt = false
+
+[functions.tmdb-movie-details]
+verify_jwt = false
+
+[functions.space-launches]
+verify_jwt = false
+
+[functions.steam-search]
+verify_jwt = false
+
+[functions.steam-players]
+verify_jwt = false
+
+[functions.ai-resolution]
+verify_jwt = false

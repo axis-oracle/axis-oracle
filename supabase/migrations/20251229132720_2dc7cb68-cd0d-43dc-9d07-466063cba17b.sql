@@ -1,0 +1,1 @@
+DELETE FROM feeds WHERE id = '845f671e-6962-460b-baaa-6731fcc3a8d6';

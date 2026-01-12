@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    /* Luxury Minimalist Palette - AXIS Light Mode */
+    --background: 45 30% 98%;
+    --foreground: 0 0% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 18%;
+
+    --primary: 43 70% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 15% 94%;
+    --secondary-foreground: 0 0% 18%;
+
+    --muted: 45 10% 92%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 43 70% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 45 10% 88%;
+    --input: 45 10% 90%;
+    --ring: 43 70% 52%;
+
+    --radius: 0.5rem;
+
+    /* Custom luxury colors - AXIS Gold */
+    --gold: 43 70% 52%;
+    --gold-light: 43 75% 62%;
+    --gold-hover: 43 65% 45%;
+    --charcoal: 0 0% 18%;
+    --cream: 45 30% 98%;
+    --cream-dark: 45 20% 95%;
+
+    /* Luxury shadows */
+    --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.04);
+    --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.06);
+    --shadow-elevated: 0 8px 32px rgba(0, 0, 0, 0.08);
+    --shadow-gold: 0 4px 20px rgba(212, 175, 55, 0.25);
+
+    --sidebar-background: 45 30% 98%;
+    --sidebar-foreground: 0 0% 18%;
+    --sidebar-primary: 43 70% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 45 15% 94%;
+    --sidebar-accent-foreground: 0 0% 18%;
+    --sidebar-border: 45 10% 88%;
+    --sidebar-ring: 43 70% 52%;
+  }
+
+  /* Dark Mode - AXIS Night */
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 45 20% 95%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 45 20% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 45 20% 95%;
+
+    --primary: 43 70% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 45 20% 90%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 43 70% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 18%;
+    --ring: 43 70% 52%;
+
+    /* Custom luxury colors - AXIS Gold (Dark) */
+    --gold: 43 70% 52%;
+    --gold-light: 43 75% 62%;
+    --gold-hover: 43 65% 58%;
+    --charcoal: 0 0% 8%;
+    --cream: 45 20% 95%;
+    --cream-dark: 0 0% 12%;
+
+    /* Luxury shadows (Dark) */
+    --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.3);
+    --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+    --shadow-elevated: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-gold: 0 4px 20px rgba(212, 175, 55, 0.35);
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 45 20% 95%;
+    --sidebar-primary: 43 70% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 16%;
+    --sidebar-accent-foreground: 45 20% 90%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 43 70% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #C5A572 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #C5A572 100%);
+  }
+
+  .bg-gradient-gold-hover {
+    background: linear-gradient(135deg, #BFA030 0%, #B59562 100%);
+  }
+
+  .shadow-soft {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .shadow-card {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .shadow-elevated {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  .shadow-gold {
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+  }
+
+  .shadow-gold-hover {
+    box-shadow: 0 6px 28px rgba(212, 175, 55, 0.35);
+  }
+
+  .border-gold-subtle {
+    border-color: rgba(212, 175, 55, 0.2);
+  }
+
+  .hover-lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .tracking-premium {
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Wallet adapter styles override - AXIS Luxury theme */
+.wallet-adapter-button {
+  font-family: 'Manrope', sans-serif !important;
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A572 100%) !important;
+  color: #fff !important;
+  border-radius: 0.5rem !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+  border: none !important;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.25) !important;
+}
+
+.wallet-adapter-button:hover {
+  background: linear-gradient(135deg, #BFA030 0%, #B59562 100%) !important;
+  box-shadow: 0 6px 24px rgba(212, 175, 55, 0.35) !important;
+  transform: translateY(-1px) !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  background: hsl(0 0% 100%) !important;
+  border: 1px solid hsl(45 10% 88%) !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12) !important;
+}
+
+.wallet-adapter-modal-title {
+  font-family: 'Manrope', sans-serif !important;
+  color: hsl(0 0% 18%) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.wallet-adapter-modal-list li {
+  background: hsl(45 15% 94%) !important;
+  border-radius: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.wallet-adapter-modal-list li:hover {
+  background: hsl(45 10% 90%) !important;
+}
+
+.wallet-adapter-modal-button-close {
+  background: hsl(45 15% 94%) !important;
+}
+
+.wallet-adapter-modal-button-close:hover {
+  background: hsl(45 10% 90%) !important;
+}
+
+.wallet-adapter-modal-button-close svg {
+  fill: hsl(0 0% 45%) !important;
+}
